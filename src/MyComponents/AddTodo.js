@@ -7,8 +7,9 @@ export const AddTodo = (props) => {
     let AddStyleSheet = {
         width: '80%'
     }
-    const [title, setTitle] = useState('ddd')
+    const [title, setTitle] = useState('')
     const [desc, setDesc] = useState('')
+    
   const submit = (e) => {
     console.log(e)
     e.preventDefault();

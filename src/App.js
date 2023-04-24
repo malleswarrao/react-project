@@ -8,6 +8,10 @@ import { Todos } from './MyComponents/Todos';
 import React, {useState} from 'react';
 
 function App() {
+  let pagecontainer = {
+    position: 'relative',
+    minheight: '100vh',
+  }
   const onDelete = (todo) => {
     console.log('I am on delete of', todo);
     settodos(todos.filter((e)=>{return e.sno!==todo.sno}))
@@ -15,7 +19,14 @@ function App() {
   const addTodo =(title, desc) => {
   
     // settodos()
-    let sno = todos[todos.length-1].sno+1
+    let sno=1;
+    if(todos.length==0)
+    {
+      sno=1;
+    }
+    else{
+    sno = todos[todos.length-1].sno+1
+    }
     const myTodo = {
       sno: sno,
       title: title,
@@ -38,7 +49,7 @@ function App() {
     desc : "You need to go to the market3"},
   ]);
   return (
-    <div>
+    <div style={pagecontainer}>
      <Header title='My Todos List' searchbar={false}/>
      {/* <TodoItem todos={todos}/> */}
      <AddTodo addTodo={addTodo}/>
