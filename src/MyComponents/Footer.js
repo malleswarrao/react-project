@@ -4,7 +4,7 @@ export const Footer = () => {
   let FooterStyleSheet = {
     position: 'relative',
     bottom: 0,
-    top: '70vh',
+    top: '60vh',
     width: '100%',
     height: '6rem',
     alignitems: 'center',
