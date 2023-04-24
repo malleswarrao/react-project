@@ -33,7 +33,7 @@ function App() {
       desc: desc,
     }
     settodos([...todos,myTodo])
-    console.log(title, desc,sno)
+    console.alert(title, desc,sno)
   }
   const [todos, settodos] = useState( [
     {sno: 1,
