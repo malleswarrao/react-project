@@ -14,7 +14,7 @@ function App() {
   let initTodo;
   if(localStorage.getItem("todos")===null){
     initTodo=[];
-    alert(localStorage.getItem("todos"))
+    console.log(localStorage.getItem("todos"),'null_')
   }
   else{
     initTodo = JSON.parse(localStorage.getItem("todos"))
@@ -24,10 +24,10 @@ function App() {
     minheight: '100vh',
   }
   const onDelete = (todo) => {
-    console.log('I am on delete of', todo);
+    // console.log('I am on delete of', todo);
     settodos(todos.filter((e)=>{return e!==todo}))
     // localStorage.setItem('todos',JSON.stringify(todos))
-    console.log(localStorage["todos"], 'hi_delete')
+    // console.log(localStorage["todos"], 'hi_delete')
   }
   const addTodo =(title, desc) => {
   
@@ -48,7 +48,7 @@ function App() {
     settodos([...todos,myTodo])
 
     
-    console.log(localStorage["todos"], 'hi')
+    // console.log(localStorage["todos"], 'hi')
     // console.alert(title, desc,sno)
   }
   const [todos, settodos] = useState(initTodo); 

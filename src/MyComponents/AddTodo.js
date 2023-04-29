@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import "./AddTodo.css";
+
 
 
 export const AddTodo = (props) => {
     let AddStyleSheet = {
-        width: '80%'
+        width: '80%',
+        
     }
     const [title, setTitle] = useState('')
     const [desc, setDesc] = useState('')
     
   const submit = (e) => {
-    console.log(e)
+    // console.log(e)
     e.preventDefault();
     if(!title || !desc)
     {
@@ -21,7 +24,9 @@ export const AddTodo = (props) => {
 
   }
   return (
-    <div className='container my-3' style={AddStyleSheet}>
+    // <div className="modalBackground">
+    <div className="modalContainer my-3">
+    <div className='my-3' style={AddStyleSheet}>
         <h3>Add Todo</h3>
             <Form onSubmit={submit}>
       <Form.Group className="mb-3" controlId="Title">
@@ -42,5 +47,7 @@ export const AddTodo = (props) => {
 
 
     </div>
+    </div>
+    // </div>
   )
 }

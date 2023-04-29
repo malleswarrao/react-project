@@ -1,5 +1,7 @@
 import React from 'react'
 import { TodoItem } from './Todo'
+import "./AddTodo.css";
+
 
 export const Todos = (props) => {
   console.log(props.todos)
