@@ -25,6 +25,7 @@ function App() {
   }
   const onDelete = (todo) => {
     // console.log('I am on delete of', todo);
+    console.log
     settodos(todos.filter((e)=>{return e!==todo}))
     // localStorage.setItem('todos',JSON.stringify(todos))
     // console.log(localStorage["todos"], 'hi_delete')
