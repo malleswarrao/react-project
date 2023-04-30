@@ -1,0 +1,16 @@
+.Footer {
+    /* position: absolute; */
+        /* display: flex; 
+        align-items: center; 
+        justify-content: center;  */
+/* bottom: 0; */
+display: grid
+}
+
+.TEXTs
+{
+            display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        bottom: 0;
+}

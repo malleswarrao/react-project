@@ -9,8 +9,8 @@ export const TodoItem = ({todos, onDelete}) => {
         {/* {todo.sno} */}
         {todos.map((todosp) => { 
             return (
-            <div className='modalTodoContainer my-5'>
-            <div key={todosp.sno}  className='my-2'>
+            <div className='modalTodoContainer my-5' key={todosp.sno}>
+            <div   className='my-2'>
                 <h4>{todosp.title}</h4>
                 <p className='my-1'>{todosp.desc}</p>
                 <div>

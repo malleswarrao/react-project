@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Footer.css";
+
 
 export const Footer = () => {
   let FooterStyleSheet = {
@@ -13,9 +15,12 @@ export const Footer = () => {
   }
   
   return (
-    <div className='bg-dark text-light' style={FooterStyleSheet}>
-        <p className='text-center py-3' >
-            Copyright &copy; Mytodolists.com</p>
+    // <div className='container'>
+    <div className='Footer'>
+    <div className='bg-dark text-light text-center'  style={FooterStyleSheet}>
+        <div className='p-4 TEXTs m-0' >Copyright &copy; Mytodolists.com</div>
         </div>
+        </div>
+        // </div>
   )
 }
